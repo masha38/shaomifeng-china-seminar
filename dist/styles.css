@@ -2356,3 +2356,992 @@ body {
     opacity: 0.065;
   }
 }
+
+/* Conversion-focused v2 sections */
+.hero-value {
+  margin: 24px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #765349;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.hero-value span {
+  color: #c79245;
+  font-size: 10px;
+}
+
+.problem-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 95% 12%, rgba(251, 192, 45, 0.13), transparent 25%),
+    linear-gradient(180deg, #fffdf8 0%, #fbf3e5 100%);
+}
+
+.problem-section::before {
+  position: absolute;
+  right: -90px;
+  bottom: -85px;
+  width: 650px;
+  height: 370px;
+  content: "";
+  background: url("./assets/chinese-gold-ornament.png") center / contain no-repeat;
+  opacity: 0.075;
+  pointer-events: none;
+}
+
+.problem-section > .section-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.problem-heading {
+  max-width: 850px;
+}
+
+.problem-grid {
+  margin-top: 58px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.problem-card {
+  position: relative;
+  min-height: 290px;
+  padding: 34px 30px 32px;
+  overflow: hidden;
+  border: 1px solid rgba(142, 62, 47, 0.2);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(242, 201, 141, 0.2), transparent 34%),
+    rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 48px rgba(76, 25, 16, 0.07);
+}
+
+.problem-card::after {
+  position: absolute;
+  right: -25px;
+  bottom: -34px;
+  width: 130px;
+  height: 130px;
+  content: "";
+  border: 1px solid rgba(201, 151, 79, 0.18);
+  border-radius: 50%;
+}
+
+.problem-no {
+  color: #b7493d;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.problem-symbol {
+  width: 52px;
+  height: 52px;
+  margin: 22px 0 24px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(201, 151, 79, 0.42);
+  border-radius: 13px;
+  color: var(--red-deep);
+  background: linear-gradient(145deg, #fff4dd, #efd09d);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.problem-card h3 {
+  margin: 0 0 13px;
+  color: #47231c;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+}
+
+.problem-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.problem-answer {
+  margin-top: 24px;
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  border: 1px solid rgba(201, 151, 79, 0.36);
+  border-radius: 14px;
+  background: linear-gradient(90deg, rgba(255, 248, 230, 0.92), rgba(255, 255, 255, 0.88));
+}
+
+.problem-answer span {
+  flex: 0 0 auto;
+  padding: 7px 13px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--red-soft);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.problem-answer strong {
+  color: var(--red-deep);
+  font-size: clamp(17px, 2vw, 22px);
+  letter-spacing: -0.035em;
+}
+
+.system-section {
+  padding: 94px 24px;
+  background:
+    radial-gradient(circle at 10% 50%, rgba(142, 62, 47, 0.08), transparent 28%),
+    #fffdf8;
+}
+
+.system-section > .section-inner {
+  position: relative;
+  padding: 66px 62px 46px;
+  overflow: hidden;
+  border: 1px solid #c9974f;
+  border-radius: 26px;
+  color: #fff;
+  background:
+    linear-gradient(135deg, rgba(112, 35, 26, 0.98), rgba(64, 14, 10, 0.99)),
+    url("./assets/seminar-hero-bg.png") center / cover;
+  box-shadow:
+    0 32px 80px rgba(76, 25, 16, 0.2),
+    0 0 0 8px rgba(201, 151, 79, 0.07);
+}
+
+.system-section > .section-inner::before {
+  position: absolute;
+  inset: 14px;
+  content: "";
+  border: 1px solid rgba(253, 228, 172, 0.2);
+  border-radius: 18px;
+  pointer-events: none;
+}
+
+.system-section > .section-inner::after {
+  position: absolute;
+  top: -80px;
+  right: -40px;
+  width: 600px;
+  height: 350px;
+  content: "";
+  background: url("./assets/chinese-gold-ornament.png") center / contain no-repeat;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.system-heading,
+.system-flow,
+.capability-strip {
+  position: relative;
+  z-index: 1;
+}
+
+.system-heading {
+  max-width: 740px;
+}
+
+.system-heading h2,
+.wanghong-copy h2 {
+  margin: 17px 0 19px;
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 1.28;
+  letter-spacing: -0.055em;
+}
+
+.system-heading p,
+.wanghong-copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.system-flow {
+  margin: 52px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  list-style: none;
+}
+
+.system-flow li {
+  position: relative;
+  min-height: 150px;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(253, 228, 172, 0.36);
+  border-bottom: 1px solid rgba(253, 228, 172, 0.18);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.system-flow li + li {
+  border-left: 1px solid rgba(253, 228, 172, 0.18);
+}
+
+.system-flow li:not(:last-child)::after {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: -9px;
+  width: 18px;
+  height: 18px;
+  content: "›";
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--red-deep);
+  background: var(--gold-light);
+  font-size: 15px;
+  font-weight: 900;
+  transform: translateY(-50%);
+}
+
+.system-flow li > span {
+  color: #efbd78;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.system-flow b {
+  margin-top: 16px;
+  font-size: 17px;
+  letter-spacing: -0.035em;
+}
+
+.system-flow small {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.capability-strip {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.capability-strip > div {
+  min-height: 84px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.capability-strip > div + div {
+  border-left: 1px solid rgba(253, 228, 172, 0.22);
+}
+
+.capability-strip b {
+  color: var(--gold-light);
+  font-size: 22px;
+  letter-spacing: -0.04em;
+}
+
+.capability-strip span {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 12px;
+}
+
+.channel-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(251, 192, 45, 0.12), transparent 24%),
+    linear-gradient(180deg, #fffdf8, #faf2e4);
+}
+
+.channel-section::before {
+  position: absolute;
+  left: -120px;
+  bottom: -100px;
+  width: 620px;
+  height: 350px;
+  content: "";
+  background: url("./assets/chinese-gold-ornament.png") center / contain no-repeat;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.channel-section > .section-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.channel-heading {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  align-items: end;
+  gap: 58px;
+}
+
+.channel-heading h2 {
+  margin: 16px 0 0;
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 1.28;
+  letter-spacing: -0.055em;
+}
+
+.channel-heading > p {
+  margin: 0 0 7px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.channel-grid {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.channel-card {
+  min-height: 148px;
+  padding: 20px 18px;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: start;
+  gap: 14px;
+  border: 1px solid rgba(142, 62, 47, 0.18);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 10px 28px rgba(76, 25, 16, 0.045);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.channel-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(142, 62, 47, 0.34);
+  box-shadow: 0 16px 36px rgba(76, 25, 16, 0.09);
+}
+
+.channel-logo {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 13px;
+  color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.26);
+  font-weight: 900;
+}
+
+.channel-logo span {
+  font-size: 15px;
+  letter-spacing: -0.04em;
+}
+
+.logo-douyin { background: linear-gradient(145deg, #161616, #030303); text-shadow: -2px 0 #29f1e5, 2px 0 #ff2d55; }
+.logo-kuaishou { background: linear-gradient(145deg, #ff7a1a, #e95413); }
+.logo-pdd { background: linear-gradient(145deg, #ef3d38, #c81818); }
+.logo-taobao { background: linear-gradient(145deg, #ff7526, #e8470a); }
+.logo-red { background: linear-gradient(145deg, #ff3047, #d40c25); }
+.logo-red span { font-size: 10px; letter-spacing: 0; }
+.logo-tmall { background: linear-gradient(145deg, #e6262d 0 46%, #111 46% 100%); }
+.logo-dewu { background: linear-gradient(145deg, #22c5b8, #0f958d); }
+.logo-wechat { background: linear-gradient(145deg, #18c765, #079746); }
+.logo-weibo { background: linear-gradient(145deg, #ff8b22, #e33a1b); }
+.logo-d2c { background: linear-gradient(145deg, #c49345, #7a3b27); }
+.logo-d2c span { font-size: 11px; letter-spacing: 0.04em; }
+
+.channel-card small {
+  display: block;
+  color: #aa5b39;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.channel-card h3 {
+  margin: 7px 0 7px;
+  color: #3f201a;
+  font-size: 16px;
+  line-height: 1.35;
+  letter-spacing: -0.035em;
+}
+
+.channel-card p {
+  margin: 0;
+  color: #80645d;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.channel-footnote {
+  margin-top: 22px;
+  padding: 17px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid rgba(201, 151, 79, 0.35);
+  border-radius: 12px;
+  color: #6b2f25;
+  background: linear-gradient(90deg, #fff5df, #fffaf0, #fff5df);
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.channel-footnote span {
+  color: #c58c3b;
+  font-size: 9px;
+}
+
+.wanghong-section {
+  padding: 100px 24px;
+  background:
+    radial-gradient(circle at 92% 20%, rgba(251, 192, 45, 0.12), transparent 25%),
+    linear-gradient(180deg, #fffaf1, #fffdf8);
+}
+
+.wanghong-layout {
+  position: relative;
+  padding: 68px 64px;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 68px;
+  overflow: hidden;
+  border: 1px solid #c9974f;
+  border-radius: 26px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(251, 192, 45, 0.2), transparent 34%),
+    linear-gradient(135deg, #72231b, #43110c 68%, #2f0c09);
+  box-shadow: 0 28px 70px rgba(76, 25, 16, 0.2);
+}
+
+.wanghong-layout::after {
+  position: absolute;
+  right: -110px;
+  bottom: -110px;
+  width: 580px;
+  height: 330px;
+  content: "";
+  background: url("./assets/chinese-gold-ornament.png") center / contain no-repeat;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+.wanghong-copy,
+.wanghong-steps {
+  position: relative;
+  z-index: 1;
+}
+
+.wanghong-badge {
+  display: inline-flex;
+  padding: 8px 13px;
+  border: 1px solid rgba(253, 228, 172, 0.42);
+  border-radius: 999px;
+  color: var(--gold-light);
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.button-gold {
+  margin-top: 30px;
+  color: var(--red-deep);
+  background: linear-gradient(135deg, #fde4ac, #e9b96d);
+  box-shadow: 0 15px 34px rgba(35, 4, 2, 0.25);
+}
+
+.button-gold:hover {
+  background: linear-gradient(135deg, #fff0ca, #f2c077);
+}
+
+.wanghong-steps {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  list-style: none;
+}
+
+.wanghong-steps li {
+  min-height: 78px;
+  padding: 14px 18px;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid rgba(253, 228, 172, 0.2);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.055);
+  backdrop-filter: blur(4px);
+}
+
+.wanghong-steps li > span {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--red-deep);
+  background: var(--gold-light);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.wanghong-steps div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wanghong-steps b {
+  font-size: 16px;
+}
+
+.wanghong-steps small {
+  color: rgba(255, 255, 255, 0.63);
+  font-size: 12px;
+}
+
+.logistics-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 4% 80%, rgba(142, 62, 47, 0.08), transparent 26%),
+    #fffdf8;
+}
+
+.logistics-heading {
+  max-width: 840px;
+}
+
+.logistics-grid {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.logistics-card {
+  position: relative;
+  min-height: 330px;
+  padding: 34px 30px 30px;
+  overflow: hidden;
+  border: 1px solid rgba(142, 62, 47, 0.22);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 100% 100%, rgba(242, 201, 141, 0.22), transparent 36%),
+    linear-gradient(145deg, #fff, #fff9ef);
+  box-shadow: 0 18px 48px rgba(76, 25, 16, 0.075);
+}
+
+.logistics-card::before {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  left: 22px;
+  height: 3px;
+  content: "";
+  background: linear-gradient(90deg, transparent, #8e3e2f, #d9a654, transparent);
+}
+
+.logistics-code {
+  color: #ad4034;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.logistics-card h3 {
+  margin: 26px 0 14px;
+  color: var(--red-deep);
+  font-size: 26px;
+  letter-spacing: -0.05em;
+}
+
+.logistics-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.mini-flow {
+  margin-top: 34px;
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-top: 1px solid rgba(142, 62, 47, 0.14);
+}
+
+.mini-flow span {
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: #654039;
+  background: #f8ead0;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.mini-flow i {
+  color: #c89448;
+  font-style: normal;
+}
+
+.instructor-section {
+  padding: 32px 24px 96px;
+  background: #fffdf8;
+}
+
+.instructor-card {
+  position: relative;
+  padding: 38px 42px;
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+  align-items: center;
+  gap: 44px;
+  overflow: hidden;
+  border: 1px solid rgba(142, 62, 47, 0.22);
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(251, 192, 45, 0.12), transparent 28%),
+    linear-gradient(145deg, #fff, #fff8ec);
+  box-shadow: 0 18px 50px rgba(76, 25, 16, 0.075);
+}
+
+.instructor-card::after {
+  position: absolute;
+  right: -110px;
+  bottom: -100px;
+  width: 450px;
+  height: 260px;
+  content: "";
+  background: url("./assets/chinese-gold-ornament.png") center / contain no-repeat;
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+.instructor-profile,
+.instructor-history {
+  position: relative;
+  z-index: 1;
+}
+
+.instructor-profile h2 {
+  margin: 12px 0 11px;
+  color: var(--red-deep);
+  font-size: 34px;
+  letter-spacing: -0.055em;
+}
+
+.instructor-profile > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.instructor-name {
+  margin-top: 24px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-top: 1px solid rgba(142, 62, 47, 0.16);
+}
+
+.instructor-name strong {
+  color: #3f1b15;
+  font-size: 24px;
+  letter-spacing: -0.04em;
+}
+
+.instructor-name span {
+  color: #8b6a61;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.instructor-history {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  list-style: none;
+}
+
+.instructor-history li {
+  min-height: 102px;
+  padding: 17px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  border-left: 3px solid #b33c32;
+  border-radius: 0 11px 11px 0;
+  background: rgba(249, 238, 215, 0.7);
+}
+
+.instructor-history time {
+  color: #ae792f;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.instructor-history span {
+  color: #52342d;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+@media (max-width: 1100px) {
+  .desktop-nav {
+    gap: 18px;
+  }
+
+  .system-section > .section-inner,
+  .wanghong-layout {
+    padding: 58px 42px 42px;
+  }
+
+  .system-flow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .system-flow li:nth-child(4) {
+    border-left: 0;
+  }
+
+  .system-flow li:nth-child(3)::after {
+    display: none;
+  }
+
+  .channel-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  .problem-grid,
+  .logistics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .channel-heading {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 22px;
+  }
+
+  .channel-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .problem-card,
+  .logistics-card {
+    min-height: 0;
+  }
+
+  .wanghong-layout {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .instructor-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .capability-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .capability-strip > div:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid rgba(253, 228, 172, 0.22);
+  }
+
+  .capability-strip > div:nth-child(4) {
+    border-top: 1px solid rgba(253, 228, 172, 0.22);
+  }
+}
+
+@media (max-width: 680px) {
+  .hero-value {
+    align-items: flex-start;
+    font-size: 13px;
+  }
+
+  .problem-section {
+    padding-top: 92px;
+    padding-bottom: 92px;
+  }
+
+  .problem-grid {
+    margin-top: 38px;
+  }
+
+  .channel-grid {
+    margin-top: 38px;
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .channel-card {
+    min-height: 0;
+    padding: 17px;
+  }
+
+  .channel-footnote {
+    align-items: flex-start;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .problem-card {
+    padding: 28px 24px;
+  }
+
+  .problem-answer {
+    padding: 19px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .system-section,
+  .wanghong-section {
+    padding: 72px 15px;
+  }
+
+  .system-section > .section-inner,
+  .wanghong-layout {
+    padding: 46px 21px 28px;
+    border-radius: 20px;
+  }
+
+  .system-heading h2,
+  .wanghong-copy h2 {
+    font-size: 31px;
+  }
+
+  .system-flow {
+    margin-top: 36px;
+    grid-template-columns: 1fr;
+  }
+
+  .system-flow li {
+    min-height: 0;
+    padding: 18px 16px;
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    column-gap: 10px;
+  }
+
+  .system-flow li + li {
+    border-left: 0;
+    border-top: 0;
+  }
+
+  .system-flow li:not(:last-child)::after {
+    top: auto;
+    right: 18px;
+    bottom: -9px;
+    transform: rotate(90deg);
+  }
+
+  .system-flow li:nth-child(3)::after {
+    display: grid;
+  }
+
+  .system-flow b,
+  .system-flow small {
+    grid-column: 2;
+    margin-top: 0;
+  }
+
+  .system-flow small {
+    margin-top: 4px;
+  }
+
+  .capability-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .capability-strip > div + div,
+  .capability-strip > div:nth-child(3) {
+    border-top: 1px solid rgba(253, 228, 172, 0.18);
+    border-left: 0;
+  }
+
+  .wanghong-layout {
+    padding-top: 42px;
+  }
+
+  .button-gold {
+    width: 100%;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .wanghong-steps li {
+    padding: 13px;
+    grid-template-columns: 42px 1fr;
+  }
+
+  .logistics-grid {
+    margin-top: 38px;
+  }
+
+  .logistics-card {
+    padding: 30px 24px 26px;
+  }
+
+  .instructor-section {
+    padding: 8px 15px 72px;
+  }
+
+  .instructor-card {
+    padding: 30px 22px;
+    gap: 26px;
+  }
+
+  .instructor-profile h2 {
+    font-size: 30px;
+  }
+
+  .instructor-history {
+    grid-template-columns: 1fr;
+  }
+
+  .instructor-history li {
+    min-height: 88px;
+  }
+
+  .mini-flow {
+    gap: 5px;
+  }
+
+  .mini-flow span {
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+}
