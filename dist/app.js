@@ -27,7 +27,11 @@
     dateNumeric: config.date.replaceAll("-", "."),
     dayLabel: weekdayEn,
     time: `${config.startTime}–${config.endTime}`,
+    ctaLabel: `${month}월 ${day}일 세미나 신청하기`,
   };
+
+  const eventEnd = new Date(`${config.date}T${config.endTime}:00+09:00`);
+  const registrationClosed = new Date() > eventEnd;
 
   document.querySelectorAll("[data-event]").forEach((element) => {
     const key = element.dataset.event;
@@ -37,7 +41,9 @@
       const now = new Date();
       const remaining = Math.ceil((eventStart - now) / 86400000);
 
-      if (remaining > 0) {
+      if (registrationClosed) {
+        element.textContent = "마감";
+      } else if (remaining > 0) {
         element.textContent = `D-${remaining}`;
       } else if (remaining === 0) {
         element.textContent = "D-DAY";
@@ -55,6 +61,7 @@
   const applicationForm = document.querySelector("#seminar-application-form");
   const submitTarget = document.querySelector(".submit-target");
   const successMessage = document.querySelector(".form-success");
+  const closedMessage = document.querySelector(".form-closed");
   let formWasSubmitted = false;
 
   if (applicationForm) {
@@ -62,7 +69,20 @@
     const eventDateField = applicationForm.querySelector("[data-google-date]");
     if (eventDateField) eventDateField.value = event.googleFormDateValue;
 
+    if (registrationClosed) {
+      applicationForm.hidden = true;
+      if (closedMessage) closedMessage.hidden = false;
+      document.querySelectorAll("[data-registration-cta]").forEach((cta) => {
+        cta.textContent = "이번 교육 접수 마감";
+        cta.classList.add("registration-closed");
+      });
+    }
+
     applicationForm.addEventListener("submit", (submissionEvent) => {
+      if (registrationClosed) {
+        submissionEvent.preventDefault();
+        return;
+      }
       const errorMessage = applicationForm.querySelector(".form-error");
 
       if (!applicationForm.checkValidity()) {
@@ -88,6 +108,41 @@
     applicationForm.hidden = true;
     successMessage.hidden = false;
   });
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: "중국 역직구 실무교육",
+    description: "중국 채널 입점부터 현지 판매·CS, 통관·물류까지 전체 운영 구조를 확인하는 오프라인 실무교육",
+    startDate: event.isoDate,
+    endDate: `${config.date}T${config.endTime}:00+09:00`,
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    eventStatus: registrationClosed
+      ? "https://schema.org/EventCompleted"
+      : "https://schema.org/EventScheduled",
+    location: {
+      "@type": "Place",
+      name: config.venueNotice,
+    },
+    organizer: {
+      "@type": "Organization",
+      name: "샤오미펑",
+      url: "https://shaomifeng-china-seminar.krasiba100.chatgpt.site/",
+    },
+    offers: {
+      "@type": "Offer",
+      price: config.price,
+      priceCurrency: "KRW",
+      availability: registrationClosed
+        ? "https://schema.org/SoldOut"
+        : "https://schema.org/InStock",
+      url: "https://shaomifeng-china-seminar.krasiba100.chatgpt.site/#apply",
+    },
+  };
+  const structuredDataScript = document.createElement("script");
+  structuredDataScript.type = "application/ld+json";
+  structuredDataScript.textContent = JSON.stringify(structuredData);
+  document.head.appendChild(structuredDataScript);
 
   const observer = new IntersectionObserver(
     (entries) => {

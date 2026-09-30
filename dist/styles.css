@@ -3512,3 +3512,49 @@ body {
     font-size: 11px;
   }
 }
+
+.registration-closed {
+  color: #fff4d5;
+  background: linear-gradient(135deg, #7b5b50, #5d4038);
+  box-shadow: none;
+}
+
+.form-closed {
+  min-height: 440px;
+  padding: 50px 32px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 12px;
+  color: var(--red-deep);
+  text-align: center;
+  background:
+    url("./assets/chinese-gold-ornament.png") center / cover no-repeat,
+    #fffaf0;
+}
+
+.form-closed[hidden] {
+  display: none;
+}
+
+.form-closed > span {
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--red-soft);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.form-closed h3 {
+  margin: 6px 0 0;
+  font-size: clamp(25px, 3vw, 34px);
+  letter-spacing: -0.045em;
+}
+
+.form-closed p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
