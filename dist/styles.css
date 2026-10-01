@@ -1512,7 +1512,7 @@ body {
   inset: 18px;
   content: "";
   background: url("./assets/chinese-gold-ornament.png") center / 100% 100% no-repeat;
-  opacity: 0.17;
+  opacity: 0.27;
   -webkit-mask-image: radial-gradient(ellipse at 62% 42%, #000 0%, rgba(0, 0, 0, 0.72) 38%, transparent 78%);
   mask-image: radial-gradient(ellipse at 62% 42%, #000 0%, rgba(0, 0, 0, 0.72) 38%, transparent 78%);
   pointer-events: none;
@@ -1572,7 +1572,7 @@ body {
   content: "";
   border-radius: 12px;
   background: url("./assets/chinese-gold-ornament.png") center / cover no-repeat;
-  opacity: 0.16;
+  opacity: 0.25;
   -webkit-mask-image: radial-gradient(ellipse at 58% 45%, #000 0%, rgba(0, 0, 0, 0.64) 42%, transparent 82%);
   mask-image: radial-gradient(ellipse at 58% 45%, #000 0%, rgba(0, 0, 0, 0.64) 42%, transparent 82%);
   pointer-events: none;
@@ -2575,7 +2575,7 @@ body {
   height: 410px;
   content: "";
   background: url("./assets/chinese-gold-ornament.png") center / contain no-repeat;
-  opacity: 0.19;
+  opacity: 0.3;
   -webkit-mask-image: radial-gradient(ellipse at 64% 42%, #000 0%, rgba(0, 0, 0, 0.7) 40%, transparent 80%);
   mask-image: radial-gradient(ellipse at 64% 42%, #000 0%, rgba(0, 0, 0, 0.7) 40%, transparent 80%);
   pointer-events: none;
@@ -2877,7 +2877,7 @@ body {
   height: 330px;
   content: "";
   background: url("./assets/chinese-gold-ornament.png") center / contain no-repeat;
-  opacity: 0.2;
+  opacity: 0.3;
   -webkit-mask-image: radial-gradient(ellipse at 62% 52%, #000 0%, rgba(0, 0, 0, 0.7) 42%, transparent 82%);
   mask-image: radial-gradient(ellipse at 62% 52%, #000 0%, rgba(0, 0, 0, 0.7) 42%, transparent 82%);
   pointer-events: none;
