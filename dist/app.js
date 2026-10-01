@@ -62,7 +62,23 @@
   const submitTarget = document.querySelector(".submit-target");
   const successMessage = document.querySelector(".form-success");
   const closedMessage = document.querySelector(".form-closed");
+  const phoneField = document.querySelector("#applicant-phone");
   let formWasSubmitted = false;
+
+  // Keep the contact number readable while a visitor types or pastes it.
+  // The saved value is also sent to the form in the familiar 000-0000-0000 format.
+  phoneField?.addEventListener("input", () => {
+    const digits = phoneField.value.replace(/\D/g, "").slice(0, 11);
+    let formatted = digits;
+
+    if (digits.length > 7) {
+      formatted = `${digits.slice(0, 3)}-${digits.slice(3, 7)}-${digits.slice(7)}`;
+    } else if (digits.length > 3) {
+      formatted = `${digits.slice(0, 3)}-${digits.slice(3)}`;
+    }
+
+    phoneField.value = formatted;
+  });
 
   if (applicationForm) {
     applicationForm.action = event.googleFormAction;

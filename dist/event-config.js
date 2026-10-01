@@ -11,9 +11,9 @@ window.EVENT_CONFIG = {
   price: "10000",
   venueNotice: "신청 완료 후 개별 안내",
   googleForm:
-    "https://docs.google.com/forms/d/e/1FAIpQLSfS6vEhL9kQfdYFzZeLt92BSzMHh0oGdQVboq8R3PeBJcQADw/viewform",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfK6xaMsFhOyOQtiy7oQjKZ1TC8Eeql-pVVFxaRAwa3Biu_jg/viewform",
   googleFormAction:
-    "https://docs.google.com/forms/d/e/1FAIpQLSfS6vEhL9kQfdYFzZeLt92BSzMHh0oGdQVboq8R3PeBJcQADw/formResponse",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfK6xaMsFhOyOQtiy7oQjKZ1TC8Eeql-pVVFxaRAwa3Biu_jg/formResponse",
   googleFormDateValue:
     "2026년 10월 2일 / 14:00~18:00 (50명 선착순 입장) / 장소는 신청 완료 후 개별 안내",
 };
