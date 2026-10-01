@@ -4,9 +4,9 @@
   --red-deep: #561910;
   --cta-red: #d32f2f;
   --cta-red-hover: #b92424;
-  --gold: #f2c98d;
-  --gold-light: #fde4ac;
-  --gold-mid: #dfaf7d;
+  --gold: #d4a438;
+  --gold-light: #f6d574;
+  --gold-mid: #b87919;
   --yellow: #fbc02d;
   --cream: #fbf0d7;
   --ink: #29130f;
@@ -1502,7 +1502,7 @@ body {
   left: 0;
   height: 2px;
   content: "";
-  background: linear-gradient(90deg, transparent, #c9974f 22%, #f2c98d 50%, #c9974f 78%, transparent);
+  background: linear-gradient(90deg, transparent, #a86f16 22%, #f6d574 50%, #a86f16 78%, transparent);
   opacity: 0.58;
 }
 
@@ -1512,7 +1512,9 @@ body {
   inset: 18px;
   content: "";
   background: url("./assets/chinese-gold-ornament.png") center / 100% 100% no-repeat;
-  opacity: 0.14;
+  opacity: 0.17;
+  -webkit-mask-image: radial-gradient(ellipse at 62% 42%, #000 0%, rgba(0, 0, 0, 0.72) 38%, transparent 78%);
+  mask-image: radial-gradient(ellipse at 62% 42%, #000 0%, rgba(0, 0, 0, 0.72) 38%, transparent 78%);
   pointer-events: none;
 }
 
@@ -1570,7 +1572,9 @@ body {
   content: "";
   border-radius: 12px;
   background: url("./assets/chinese-gold-ornament.png") center / cover no-repeat;
-  opacity: 0.13;
+  opacity: 0.16;
+  -webkit-mask-image: radial-gradient(ellipse at 58% 45%, #000 0%, rgba(0, 0, 0, 0.64) 42%, transparent 82%);
+  mask-image: radial-gradient(ellipse at 58% 45%, #000 0%, rgba(0, 0, 0, 0.64) 42%, transparent 82%);
   pointer-events: none;
 }
 
@@ -1725,7 +1729,7 @@ body {
 }
 
 .benefit-featured::before {
-  background: linear-gradient(90deg, transparent, #8e3e2f 28%, #f2c98d 50%, #8e3e2f 72%, transparent);
+  background: linear-gradient(90deg, transparent, #8e3e2f 28%, #f6d574 50%, #8e3e2f 72%, transparent);
 }
 
 .video-frame {
@@ -2565,13 +2569,15 @@ body {
 
 .system-section > .section-inner::after {
   position: absolute;
-  top: -80px;
-  right: -40px;
-  width: 600px;
-  height: 350px;
+  top: -96px;
+  right: -66px;
+  width: 700px;
+  height: 410px;
   content: "";
   background: url("./assets/chinese-gold-ornament.png") center / contain no-repeat;
-  opacity: 0.15;
+  opacity: 0.19;
+  -webkit-mask-image: radial-gradient(ellipse at 64% 42%, #000 0%, rgba(0, 0, 0, 0.7) 40%, transparent 80%);
+  mask-image: radial-gradient(ellipse at 64% 42%, #000 0%, rgba(0, 0, 0, 0.7) 40%, transparent 80%);
   pointer-events: none;
 }
 
@@ -2871,7 +2877,9 @@ body {
   height: 330px;
   content: "";
   background: url("./assets/chinese-gold-ornament.png") center / contain no-repeat;
-  opacity: 0.16;
+  opacity: 0.2;
+  -webkit-mask-image: radial-gradient(ellipse at 62% 52%, #000 0%, rgba(0, 0, 0, 0.7) 42%, transparent 82%);
+  mask-image: radial-gradient(ellipse at 62% 52%, #000 0%, rgba(0, 0, 0, 0.7) 42%, transparent 82%);
   pointer-events: none;
 }
 
@@ -2896,12 +2904,12 @@ body {
 .button-gold {
   margin-top: 30px;
   color: var(--red-deep);
-  background: linear-gradient(135deg, #fde4ac, #e9b96d);
+  background: linear-gradient(135deg, #ffe69a, #c78a1f);
   box-shadow: 0 15px 34px rgba(35, 4, 2, 0.25);
 }
 
 .button-gold:hover {
-  background: linear-gradient(135deg, #fff0ca, #f2c077);
+  background: linear-gradient(135deg, #fff3be, #dca337);
 }
 
 .wanghong-steps {
