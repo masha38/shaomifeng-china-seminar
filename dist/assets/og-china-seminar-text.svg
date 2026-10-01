@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3c100d"/><stop offset=".52" stop-color="#6b2218"/><stop offset="1" stop-color="#2e0b09"/></linearGradient>
+    <radialGradient id="glow" cx="100%" cy="0%" r="80%"><stop stop-color="#d4a438" stop-opacity=".32"/><stop offset=".58" stop-color="#b87919" stop-opacity=".07"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2bf"/><stop offset=".45" stop-color="#d4a438"/><stop offset="1" stop-color="#a46612"/></linearGradient>
+    <pattern id="cloud" width="180" height="120" patternUnits="userSpaceOnUse"><path d="M0 67c28-36 65-36 92 0 20-22 46-22 64 0" fill="none" stroke="#f6d574" stroke-opacity=".12" stroke-width="3"/><path d="M18 86c35-23 77-23 117 0" fill="none" stroke="#f6d574" stroke-opacity=".07" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="26" y="26" width="1148" height="578" rx="3" fill="none" stroke="#d4a438" stroke-opacity=".72" stroke-width="2"/>
+  <rect width="1200" height="630" fill="url(#cloud)" opacity=".7"/>
+  <g fill="none" stroke="url(#gold)" stroke-opacity=".19" stroke-width="3">
+    <path d="M856 150h242l-23-31h-46l-17-29-17 29h-47z"/><path d="M882 150v182m38-182v182m38-182v182m38-182v182m38-182v182"/>
+    <path d="M834 332h286l-28 22H862z"/><path d="M804 392h340l-38-30h-264z"/><path d="M782 468h382l-38-76H820z"/>
+    <circle cx="1030" cy="210" r="126"/><circle cx="1030" cy="210" r="108"/>
+  </g>
+  <g font-family="'Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="86" y="108" fill="#f6d574" font-size="21" font-weight="700" letter-spacing="5">SHAOMIFENG · OFFLINE SEMINAR</text>
+    <rect x="86" y="143" width="62" height="5" fill="url(#gold)"/>
+    <text x="86" y="242" fill="#fff8e7" font-size="58" font-weight="800" letter-spacing="-4">중국 역직구 실무교육</text>
+    <text x="86" y="318" fill="#f6d574" font-size="40" font-weight="700" letter-spacing="-2">입점부터 판매·CS, 통관·물류까지</text>
+    <text x="86" y="368" fill="#fff8e7" fill-opacity=".86" font-size="29" font-weight="500" letter-spacing="-1">판매되는 중국 진출의 전체 구조를 확인하세요</text>
+    <line x1="86" y1="434" x2="653" y2="434" stroke="#f6d574" stroke-opacity=".4"/>
+    <text x="86" y="490" fill="#f6d574" font-size="25" font-weight="700">2026. 10. 02 FRI  ·  14:00–18:00</text>
+    <text x="86" y="540" fill="#fff8e7" font-size="22" font-weight="500">50명 선착순  ·  참가비 10,000원  ·  신청 완료 후 장소 안내</text>
+  </g>
+</svg>

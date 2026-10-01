@@ -114,7 +114,7 @@
     "@type": "Event",
     name: "중국 역직구 실무교육",
     description: "중국 역직구 판매를 준비하는 브랜드와 셀러를 위한 오프라인 실무교육입니다. 중국 채널 입점부터 현지 판매·CS, 왕홍 라이브, 통관·물류까지 실제 운영 구조를 안내합니다.",
-    image: ["https://shaomifeng-china-seminar.krasiba100.chatgpt.site/assets/og-china-seminar.png"],
+    image: ["https://shaomifeng-china-seminar.krasiba100.chatgpt.site/assets/og-china-seminar-text.png"],
     startDate: event.isoDate,
     endDate: `${config.date}T${config.endTime}:00+09:00`,
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
