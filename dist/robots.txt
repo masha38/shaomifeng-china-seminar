@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shaomifeng-china-seminar.krasiba100.chatgpt.site/sitemap.xml
